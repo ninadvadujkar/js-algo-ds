@@ -3,7 +3,7 @@ const binarySearch = (array, termToSearch) => {
   let right = array.length - 1;
 
   while (left <= right) {
-    const middle = Math.round((left + right) / 2);
+    const middle = left + Math.round((right - left)/2);
     const arrayItemToCheck = array[middle];
     if (arrayItemToCheck === termToSearch) {
       return middle;
