@@ -1,3 +1,5 @@
+const swap = require('./swap');
+
 const bubbleSort = (array) => {
   const a = array.slice(0);
   for (let i = a.length; i > 0; i--) {
@@ -30,12 +32,6 @@ const bubbleSortOptimized = (array) => {
     if (noSwaps) break;
   }
   return a;
-};
-
-const swap = (array, index1, index2) => {
-  const temp = array[index1];
-  array[index1] = array[index2];
-  array[index2] = temp;
 };
 
 const ret1 = bubbleSort([45, 23, 67, 22, 56, 8]);
