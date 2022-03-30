@@ -9,7 +9,9 @@ const selectionSort = (array) => {
         min = j;
       }
     }
-    swap(a, i, min);
+    if (i !== min) {
+      swap(a, i, min); 
+    }
     console.log('OUTER.....', a);
   }
 };
